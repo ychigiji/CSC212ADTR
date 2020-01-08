@@ -23,7 +23,7 @@ public abstract class SetADT<ItemType> implements Iterable<ItemType> {
 	/**
 	 * Add a element to this set if new/unique.
 	 * 
-	 * @param value - the value to add.
+	 * @param i - the value to add.
 	 */
 	public abstract void insert(ItemType value);
 
@@ -125,4 +125,6 @@ public abstract class SetADT<ItemType> implements Iterable<ItemType> {
 	public int hashCode() {
 		throw new IllegalArgumentException("Don't use a SetADT as a key in a hashmap!");
 	}
+
+	
 }
